@@ -15,17 +15,18 @@ render(){
 }
 }
 function addsnake (){
-    let snake=   Snake(
+    let snake = new Snake(
         Math.random() * boardWidth, 
         Math.random() * boardHeight 
-);
+    );
     gameBoard.appendChild(
- snake.render()    
+    snake.render()    
     );
 }
 
 window.addEventListener(
-
+    'load',
+    addsnake
 );
 
 
